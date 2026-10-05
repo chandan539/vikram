@@ -1,0 +1,29 @@
+<form
+  name="assessment"
+  method="POST"
+  action="/thank-you/"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="assessment" />
+  <p class="hp" aria-hidden="true">
+    <label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+  </p>
+  <label>
+    Your Name
+    <input type="text" name="name" placeholder="Enter Your Name" autocomplete="name" required />
+  </label>
+  <label>
+    Your Email
+    <input type="email" name="email" placeholder="Enter Your Email" autocomplete="email" required />
+  </label>
+  <label>
+    Your Phone Number
+    <input type="tel" name="phone" placeholder="Enter Your Phone" autocomplete="tel" />
+  </label>
+  <label>
+    Problem Statement
+    <textarea name="problem" placeholder="Enter Your Problem Statement" required></textarea>
+  </label>
+  <button class="btn" type="submit">Contact Me</button>
+</form>

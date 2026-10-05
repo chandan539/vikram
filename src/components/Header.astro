@@ -1,0 +1,34 @@
+---
+import settings from "../content/settings.json";
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="/" aria-label={settings.siteName}>
+      <img src="/images/logo.png" alt="Vikram Rajput" width="118" height="78" />
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span>
+    </button>
+    <nav id="site-nav" class="nav">
+      <a href="/business-models/">Business Models</a>
+      <a href="/contact-us/">Let's Talk</a>
+      <a class="btn" href="/#book">Book A Call</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("#site-nav");
+  button?.addEventListener("click", () => {
+    const open = nav?.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(Boolean(open)));
+  });
+  nav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      button?.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>

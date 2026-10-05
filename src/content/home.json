@@ -1,0 +1,105 @@
+{
+  "heroTitle": "I help brands & startups crack GTM and create a sales funnel",
+  "heroSubtitle": "Transform startups into cash-printing businesses.",
+  "videos": [
+    {
+      "id": "FKsX0pwaMdY",
+      "title": "Go to market strategy"
+    },
+    {
+      "id": "ffp0RhTUmac",
+      "title": "Watch on YouTube"
+    },
+    {
+      "id": "zzoA6bN_yj8",
+      "title": "Sales and GTM"
+    }
+  ],
+  "press": [
+    { "src": "/images/press/nyt.webp", "alt": "The New York Times" },
+    { "src": "/images/press/yourstory.webp", "alt": "YourStory" },
+    { "src": "/images/press/aajtak.webp", "alt": "Aaj Tak" },
+    { "src": "/images/press/dainik.webp", "alt": "Dainik Bhaskar" },
+    { "src": "/images/press/navbharat.webp", "alt": "Navbharat" },
+    { "src": "/images/press/toi.webp", "alt": "The Times of India" }
+  ],
+  "bioTitle": "I've sold 49 million dollars worth of products and services.",
+  "bio": "Hi, I am Vikram Rajput, a Serial Entrepreneur, with a passion for sales and GTM, As a dreamer, motivator, and critical thinker, I bring a unique, perspective to GTM that can help you develop the sales funnel. I am optimistic about the potential for change and the ability of “start-ups” to make a difference. At the same time, I am realistic about the challenges and obstacles that will get in the way of the founder achieving their goals. I am a trained NLP sales coach and business negotiator. 100% ready to crack your GTM",
+  "portrait": "/images/portrait/vikram.webp",
+  "learnTitle": "Let's learn more about each other.",
+  "learnHeading": "Is there anything you're interested in but don't know how to turn into a money-making venture?",
+  "learnParagraphs": [
+    "So you think you’re confident to build your business? Well, think again! Unless you have the courage to go after your dreams and goals, you’ll never be able to achieve anything with your useless confidence.",
+    "The confidence is internal whereas courage comes from external sources",
+    "but getting the courage to take on big challenges doesn’t come easy – in fact, it takes a lot of hard work, perseverance, and grit.",
+    "Confused?",
+    "No worries, that’s where my mentorship comes in – Luckily, we have a few tips on how to get started. So read on and learn how to get the courage you need to achieve your goals!"
+  ],
+  "brandsTitle": "Brand I have worked with",
+  "brands": [
+    { "src": "/images/brands/ewt.webp", "alt": "EWT" },
+    { "src": "/images/brands/windguard.webp", "alt": "Windguard" },
+    { "src": "/images/brands/sany.webp", "alt": "Sany" },
+    { "src": "/images/brands/ge.webp", "alt": "GE" },
+    { "src": "/images/brands/tata.webp", "alt": "Tata Motors" },
+    { "src": "/images/brands/ul.webp", "alt": "UL" },
+    { "src": "/images/brands/dewi.webp", "alt": "DEWI" },
+    { "src": "/images/brands/pioneer.webp", "alt": "Pioneer" },
+    { "src": "/images/brands/lz.webp", "alt": "LZ" },
+    { "src": "/images/brands/xventum.webp", "alt": "Xventum" },
+    { "src": "/images/brands/innox.webp", "alt": "Innox" },
+    { "src": "/images/brands/rentel.webp", "alt": "Rentel" },
+    { "src": "/images/brands/group.png", "alt": "Brand" },
+    { "src": "/images/brands/clinivantage.webp", "alt": "Clinivantage" },
+    { "src": "/images/brands/unison.webp", "alt": "Unison" }
+  ],
+  "testimonial": {
+    "quote": [
+      "I am the founder and CEO of Clinicatage, I know Vikram for the past 5 years now, and have seen him generate tons of sales through his unique growth hacks",
+      "I was impressed with how simple tweaking in the sales funnel can bring you to 7X growth. He does not do only preaching rather he walks the talk and shows you the numbers!",
+      "Grab his time if he agrees to advise you on your business…"
+    ],
+    "name": "Dr. Nilesh Jain",
+    "role": "CEO & Founder, Clinivantage Healthcare",
+    "logo": "/images/brands/clinivantage.webp"
+  },
+  "smileTitle": "This makes me smile 🙂",
+  "stats": [
+    { "value": "3", "label": "START UP" },
+    { "value": "13+", "label": "MARKETING AWARD" },
+    { "value": "20+", "label": "YEARS EXPERIENCE" },
+    { "value": "67+", "label": "HAPPY CLIENTS" }
+  ],
+  "sellTitle": "Sell Like CraZzyy",
+  "services": [
+    {
+      "id": "gtm",
+      "title": "Crack GTM",
+      "paragraphs": [
+        "Getting your product in front of the right people is the key to success in any business, and that’s especially true for startups.",
+        "The go-to-market process can be overwhelming, and it’s often the cause of 80% of startup failures. From developing a marketing plan to executing it, to building a distribution network, it can be difficult to know where to start. Vikram is here to help.",
+        "We have years of experience helping startups go to market and achieve success.",
+        "From developing a marketing and distribution plan to helping you launch your product, we’ll make sure that your product reaches the right people and gets the exposure it needs to succeed."
+      ]
+    },
+    {
+      "id": "funnel",
+      "title": "Sales Funnel",
+      "paragraphs": [
+        "If you’re not generating sales, you’re not making money. In order to increase your business’ cash flow, you need to develop a sales funnel. A sales funnel is a structured process that helps you convert leads into paying customers.",
+        "A sales funnel is the key to unlocking your business’ potential. It helps you identify and acquire new customers, provide them with a compelling value proposition, and convert them into repeat customers. Plus, it’s an essential tool for growth and success.",
+        "Click here to get started with creating your sales funnel today!"
+      ]
+    },
+    {
+      "id": "copy",
+      "title": "Copy Writing",
+      "paragraphs": [
+        "Copywriting is the process of creating words that sell, whether that’s for a website, email, or landing page.",
+        "Copywriting can be difficult, but it’s an essential part of effective marketing. With The Copywriter’s service, you’ll get a copy that engages and converts readers into buyers.",
+        "As a copywriter, my goal is to make your clients’ work easier. With me, you’ll see how to do just that by creating sales-ready copy that resonates with your target audience.",
+        "If you’re looking to improve your copywriting for website, email, or landing page then click here to order my copywriter’s hack today!"
+      ]
+    }
+  ]
+}

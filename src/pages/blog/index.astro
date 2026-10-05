@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import PostList from "../../components/PostList.astro";
+---
+
+<Base title="Blogs" description="Articles on bootstrapping, go-to-market, and sales.">
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Blogs</h1>
+      <p class="lede">Three articles published on the original site.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <PostList />
+    </div>
+  </section>
+</Base>

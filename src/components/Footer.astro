@@ -1,0 +1,47 @@
+---
+import settings from "../content/settings.json";
+import AssessmentForm from "./AssessmentForm.astro";
+---
+
+<section class="section" id="book">
+  <div class="wrap form-panel">
+    <h2>Book Free Assessment Call</h2>
+    <p class="lede">Tell me the problem. I will reply about GTM, the sales funnel, or the copy.</p>
+    <AssessmentForm />
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>Services</h2>
+      <p>{settings.footerBio}</p>
+      <ul>
+        <li><a href="/#gtm">GTM Crack</a></li>
+        <li><a href="/#funnel">Sales Funnel</a></li>
+        <li><a href="/#copy">Copy Writing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contact Us</h2>
+      <ul>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/contact-us/">Contact Us</a></li>
+        <li><a href={settings.youtube}>Youtube</a></li>
+        <li><a href={settings.linkedin}>Linkedin</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <p>Contact : <a href={settings.phoneHref}>{settings.phone}</a></p>
+      <p>WhatsApp : <a href={settings.whatsappHref}>{settings.whatsapp}</a></p>
+      <p>Email: <a href={`mailto:${settings.email}`}>{settings.email}</a></p>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>© {new Date().getFullYear()} {settings.siteName}</span>
+    <a href="/privacy-policy/">Privacy Policy</a>
+    <a href="/refund_returns/">Refund and Returns</a>
+    <a href="/blog/">Blog</a>
+  </div>
+</footer>

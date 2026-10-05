@@ -1,0 +1,116 @@
+---
+import Base from "../layouts/Base.astro";
+import home from "../content/home.json";
+import settings from "../content/settings.json";
+---
+
+<Base
+  title={`${settings.siteName} – ${settings.titleSuffix}`}
+  description={home.heroSubtitle}
+>
+  <section class="hero">
+    <div class="wrap">
+      <h1>{home.heroTitle}</h1>
+      <p>{home.heroSubtitle}</p>
+      <a class="btn" href="/#book">Book A Call <span aria-hidden="true">›</span></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap video-grid">
+      {
+        home.videos.map((video) => (
+          <a
+            class="video-card"
+            href={`https://youtu.be/${video.id}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
+              alt={video.title}
+            />
+            <i class="play" aria-hidden="true"></i>
+            <span>Watch on YouTube</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap press-row">
+      {home.press.map((logo) => <img src={logo.src} alt={logo.alt} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <h2>{home.bioTitle}</h2>
+        <p>{home.bio}</p>
+      </div>
+      <img class="portrait" src={home.portrait} alt="Vikram Rajput" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap learn">
+      <h2>{home.learnTitle}</h2>
+      <h3>{home.learnHeading}</h3>
+      {home.learnParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+      <a class="btn" href="/blog/">Read the blog</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{home.brandsTitle}</h2>
+      <div class="brand-grid">
+        {home.brands.map((brand) => <img src={brand.src} alt={brand.alt} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap quote">
+      <img src={home.testimonial.logo} alt="" />
+      {home.testimonial.quote.map((line) => <p>{line}</p>)}
+      <footer>
+        <strong>{home.testimonial.name}</strong>
+        <span>{home.testimonial.role}</span>
+      </footer>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{home.smileTitle}</h2>
+      <div class="stat-grid">
+        {
+          home.stats.map((stat) => (
+            <article>
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{home.sellTitle}</h2>
+      {
+        home.services.map((service) => (
+          <article class="service" id={service.id}>
+            <h2>{service.title}</h2>
+            {service.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            <a class="btn" href="/#book">Book A Call</a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Base>

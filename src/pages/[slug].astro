@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../layouts/Base.astro";
+import PostList from "../components/PostList.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  const posts = await getCollection("posts");
+  return [
+    ...pages.map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry, kind: "page" as const },
+    })),
+    ...posts.map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry, kind: "post" as const },
+    })),
+  ];
+}
+
+const { entry, kind } = Astro.props;
+const { Content } = await render(entry);
+const description =
+  kind === "post" ? entry.data.excerpt : entry.data.description;
+const dateLabel =
+  kind === "post"
+    ? entry.data.date.toLocaleDateString("en-US", {
+        timeZone: "UTC",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      })
+    : "";
+---
+
+<Base title={entry.data.title} description={description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>{entry.data.title}</h1>
+      {kind === "post" && <p class="lede">{dateLabel}</p>}
+    </div>
+  </section>
+  <article class="wrap prose">
+    <Content />
+    {entry.id === "business-models" && <PostList />}
+  </article>
+</Base>
